@@ -111,10 +111,26 @@
     }
 }
 
-
+/* Esercizio 11 */
 .ex-11-icon {
     font-size: 60px;
 }
+.ex-11-icon:hover {
+    animation: half-spin 2s linear infinite;
+}
+@keyframes half-spin {
+    0% {
+        transform: rotate(0);
+    }
+    90% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
