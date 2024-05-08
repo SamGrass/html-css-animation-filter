@@ -97,10 +97,21 @@
     transform: scale(1.3);
 }
 
-
+/* Esercizio 10 */
 .ex-10-icon {
     font-size: 60px;
+    animation: spin 1s linear infinite reverse;
 }
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
 .ex-11-icon {
     font-size: 60px;
 }
