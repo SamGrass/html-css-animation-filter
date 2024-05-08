@@ -169,7 +169,7 @@
     animation: bottom-slide 4s linear infinite;
 }
 @keyframes top-slide {
-    0 {
+    0% {
         left: 10%;
     }
     50% {
@@ -180,7 +180,7 @@
     }
 }
 @keyframes bottom-slide {
-    0 {
+    0% {
         right: 20%;
     }
     50% {
@@ -188,5 +188,65 @@
     }
     100% {
         right: 20%;
+    }
+}
+
+/* Esercizio 13*/
+.ex-13-button:hover .ex-13-top-white {
+    animation: top-spin 3s linear infinite;
+}
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: bottom-spin 3s linear infinite;
+}
+@keyframes top-spin {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    20% {
+        left: 85%;
+        top: -10px;
+    }
+    40% {
+        left: 85%;
+        top:  54px;
+    }
+    60% {
+        left: -15%;
+        top:  54px;
+    }
+    80% {
+        left: -15%;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+@keyframes bottom-spin {
+    0% {
+        right: 20%;
+        bottom: -10px;
+    }
+    20% {
+        right: 85%;
+        bottom: -10px;
+    }
+    40% {
+        right: 85%;
+        bottom: 54px;
+    }
+    60% {
+        right: -15%;
+        bottom: 54px;
+    }
+    80% {
+        right: -15%;
+        bottom: -10px;
+    }
+    100% {
+        right: 20%;
+        bottom: -10px;
     }
 }
